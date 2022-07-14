@@ -12,7 +12,10 @@
 	},
 	"type": "module",
 	"main": "./distribution/index.js",
-	"exports": "./distribution/index.js",
+	"exports": {
+		".": "./distribution/index.js",
+		"./package.json": "./package.json"
+	},
 	"types": "./distribution/index.d.ts",
 	"engines": {
 		"node": ">=14.16"
